@@ -541,3 +541,12 @@ footer .social-links a {
 footer .social-links a:hover {
   color: #ff9800;
 }
+
+footer .status {
+  margin-top: 15px;
+}
+
+footer .status img {
+  height: 30px; /* kecilkan biar proporsional */
+  /*filter: contrast(120%); /*ikin teks terlihat lebih bold**/
+}
