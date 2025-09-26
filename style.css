@@ -547,6 +547,42 @@ footer .status {
 }
 
 footer .status img {
-  height: 30px; /* kecilkan biar proporsional */
-  /*filter: contrast(120%); /*ikin teks terlihat lebih bold**/
+  height: 30px;
+}
+
+.beta-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
+}
+
+.beta-modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.beta-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.beta-modal-btn {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
 }
