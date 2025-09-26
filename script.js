@@ -50,3 +50,23 @@ const navLinks = document.getElementById("navLinks");
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+  const popup = document.getElementById("ujiCobaPopup");
+  const closeBtn = document.getElementById("ujiCobaClose");
+
+  // Tampilkan popup saat halaman load
+  popup.style.display = "flex";
+
+  // Tutup popup saat klik tombol
+  closeBtn.addEventListener("click", function() {
+    popup.style.display = "none";
+  });
+
+  // Tutup popup saat klik di luar konten
+  popup.addEventListener("click", function(e) {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
